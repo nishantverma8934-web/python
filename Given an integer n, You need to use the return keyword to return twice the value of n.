@@ -1,0 +1,4 @@
+class Solution:
+    def returnValueFunction(self, r):
+        # code here
+        return r * 2
