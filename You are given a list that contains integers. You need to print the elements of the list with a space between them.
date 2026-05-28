@@ -1,0 +1,5 @@
+def listTraversal(arr):
+    #code here
+    numbers=arr
+    print(*arr)
+    
