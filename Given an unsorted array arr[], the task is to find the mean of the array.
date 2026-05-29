@@ -1,0 +1,7 @@
+class Solution:
+    def findMean(self, arr):
+        # code here 
+        n = len(arr)#for taking length of array
+        total = sum(arr):#for sum of the elements
+            ans = total // n#for devide all the element
+            return ans
