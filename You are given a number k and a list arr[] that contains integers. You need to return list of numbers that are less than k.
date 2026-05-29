@@ -1,0 +1,9 @@
+class Solution:
+
+    def lessThan(self, arr, k):
+        #code here
+        ans = [] # List to store elements less than k
+        for e in arr:#visit all elements
+        if e < k:#if e less then k
+        ans.append(e)#aad the elements to k
+        return ans#return answer
