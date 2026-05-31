@@ -1,0 +1,6 @@
+def isPalindrome(s):
+    #code here
+    if s == s[::-1]:#s==s is use for check original string is equal to reversed string
+        return True#[::-1] is use for reverse the original string
+    else:
+        return False
