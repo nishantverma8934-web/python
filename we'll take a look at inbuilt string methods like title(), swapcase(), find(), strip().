@@ -1,0 +1,14 @@
+def trim(str):
+    return str.strip()#for remove spacing both side of string front and back
+
+
+def exists(str, x):
+    return str.find(x)
+
+
+def titleIt(str):
+    return str.title()#for first word upper case in string
+
+
+def casesSwap(str):
+    return str.swapcase()#for all characters upper case in string
