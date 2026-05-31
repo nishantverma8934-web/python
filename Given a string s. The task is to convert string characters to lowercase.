@@ -1,0 +1,5 @@
+class Solution:
+    def toLower (self, str):
+        #code here
+        str = str.lower()#to convert string into lower case
+        return str
