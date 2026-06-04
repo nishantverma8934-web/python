@@ -1,0 +1,10 @@
+def create_dict(arr):
+
+    dict = {}#make empty dict
+    for name, marks in arr:
+        dict[name] = marks#print array in dict
+    # Your code here
+    # Hint: use loop to iterate through arr
+    # and assign key value to the dict
+
+    return dict
