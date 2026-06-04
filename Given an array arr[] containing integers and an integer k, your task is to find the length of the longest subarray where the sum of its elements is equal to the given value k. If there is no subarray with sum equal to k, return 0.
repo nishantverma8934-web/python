@@ -1,0 +1,15 @@
+class Solution:
+    def longestSubarray(self, arr, k):
+        prefix_sum = 0#Initially no elements have been processed, so the sum is 0
+        max_len = 0#store in prefix if greater then 0
+        prefix_map = {}
+        for i in range(len(arr)):#loop for all all elements visit
+            prefix_sum += arr[i]#Add current element to running sum
+            if prefix_sum == k:#Checks if the sum from index 0 to current index equals k
+                max_len = i + 1#If the prefix sum equals k, then the subarray starts from index 0
+            if (prefix_sum - k) in prefix_map:
+                max_len = max(max_len, i - prefix_map[prefix_sum - k])
+            if prefix_sum not in prefix_map:
+                prefix_map[prefix_sum] = i
+
+        return max_len
