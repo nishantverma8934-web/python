@@ -1,0 +1,20 @@
+# insert into dictionary
+def insert_dict(query, dict):#Inserts a student name and marks into the dictionary.
+    dict[query[1]] = int(query[2])#query is expected to be a list like
+#query 1 for insert name and query 2 for marks obtain by student
+
+# deleting from dictionary
+def del_dict(query, dict):#Deletes a student's record if it exists
+    if query[1] in dict:#if query exist
+        del dict[query[1]]#delete query 1 from dict
+        return True#for successfull deleating
+    return False#if query not exists 
+
+
+# print marks of required name
+def print_dict(key, dict):
+    if (key in dict):#check key student are exist in dict
+        flag = True#if exist return true
+        print("Marks of " + key + " is " + str(dict[key]))
+
+    return True if flag is True else False
