@@ -1,0 +1,10 @@
+class Solution:
+    
+    def relativeSort(self, a1, a2):
+        mp = {}#making empty map for store values
+        for i in range(len(a2)):#visiting all elemts in a2
+            if a2[i] not in mp:#condition apply
+                mp[a2[i]] = i#aad items in map
+
+        # custom comparator using lambda inside sort's key
+        a1.sort(key=lambda x: (mp.get(x, float('inf')), x))#applying method
