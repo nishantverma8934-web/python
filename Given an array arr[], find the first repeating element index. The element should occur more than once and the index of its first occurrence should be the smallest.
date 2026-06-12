@@ -1,0 +1,11 @@
+class Solution:
+    def firstRepeated(self,arr):
+        # code here 
+        freq = {}#create empty map for store value
+        for x in arr:
+            freq[x] = freq.get(x, 0) + 1
+        for i, x in enumerate(arr):#find the first element whose frequency(kitni bar aaya) is greater than 1
+            if freq[x] > 1:#condition for fre[x] is greater then 1
+                return i + 1#visit again the elements by adding 1
+
+        return -1
